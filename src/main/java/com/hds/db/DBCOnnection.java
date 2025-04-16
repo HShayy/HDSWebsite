@@ -6,7 +6,7 @@ import java.sql.SQLException;
 public class DBCOnnection {
 
     // Update with your actual database name, username, and password.
-	private static final String URL = "jdbc:mysql://host.docker.internal:3306/hds_database";
+	private static final String URL = "jdbc:mysql://host.docker.internal:3306/hds_database?useUnicode=true&characterEncoding=UTF-8";
 	private static final String USER = "root";
 	private static final String PASSWORD = "Monster2@";
   
