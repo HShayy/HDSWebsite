@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Cart - Home Design Solutions</title>
+  <style>
+    /* Reset some defaults */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    /* Header */
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: #f2f2f2;
+      padding: 10px 20px;
+      border-bottom: 2px solid #000;
+    }
+    header .logo {
+      font-size: 24px;
+      font-weight: bold;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 15px;
+    }
+    nav ul li a {
+      text-decoration: none;
+      color: #000;
+      font-weight: bold;
+    }
+    /* Main Content */
+    main {
+      padding: 20px;
+    }
+    main h1 {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+    /* Table for Cart Items */
+    table {
+      width: 100%;
+      border-collapse: collapse; /* merges borders */
+      margin-bottom: 20px;
+    }
+    /* Table Head */
+    thead th {
+      text-align: left;
+      padding: 10px;
+      font-weight: normal;
+      border-bottom: 2px solid #000; /* thick bottom line */
+    }
+    /* Table Body Rows */
+    tbody tr {
+      border-bottom: 1px solid #000; /* line between items */
+    }
+    tbody td {
+      padding: 10px;
+      vertical-align: top;
+    }
+    /* Product Column Styling */
+    .product-info img {
+      display: block;
+      max-width: 100px; /* adjust image size as needed */
+      margin-bottom: 5px;
+    }
+    .product-info h2 {
+      font-size: 18px;
+      margin-bottom: 5px;
+    }
+    .product-info p {
+      margin-bottom: 5px;
+    }
+    /* Subtotal & Checkout */
+    .cart-summary {
+      text-align: right;
+      font-size: 18px;
+    }
+    .cart-summary p {
+      margin-bottom: 10px;
+    }
+    .checkout-btn {
+      display: inline-block;
+      padding: 10px 20px;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      border: 2px solid #000;
+      background: #fff;
+    }
+    /* Footer */
+    footer {
+      text-align: center;
+      background-color: #f2f2f2;
+      padding: 10px;
+      border-top: 2px solid #000;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header Section -->
+  <header>
+    <div class="logo">Home Design Solutions</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="cart.html">Cart</a></li>
+        <li><a href="login.html">Sign in</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main Content Section -->
+  <main>
+    <h1>Your Order</h1>
+    <table>
+      <thead>
+        <tr>
+          <th style="width: 50%;">Product</th>
+          <th style="width: 15%;">Price</th>
+          <th style="width: 10%;">Quantity</th>
+          <th style="width: 15%;">Total</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Item 1 -->
+        <tr>
+          <td class="product-info">
+            <img src="https://via.placeholder.com/100" alt="Dining Room Light Fixture">
+            <h2>Dining Room Light Fixture</h2>
+            <p>Color: Bronze</p>
+          </td>
+          <td>$733</td>
+          <td>1</td>
+          <td>$733</td>
+        </tr>
+        <!-- Item 2 -->
+        <tr>
+          <td class="product-info">
+            <img src="https://via.placeholder.com/100" alt="Eustace Pendant Light">
+            <h2>Eustace Pendant Light</h2>
+            <p>Color: Oxidized Nickel</p>
+          </td>
+          <td>$410</td>
+          <td>1</td>
+          <td>$410</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="cart-summary">
+      <p>Subtotal: $1143</p>
+      <!-- Add tax or other lines if needed -->
+      <!-- <p>Tax: $XX</p> -->
+      <!-- <p>Shipping: $XX</p> -->
+      <!-- <p>Total: $XXXX</p> -->
+      <button class="checkout-btn" onclick="location.href='checkout.html'">CHECKOUT</button>
+    </div>
+  </main>
+
+  <!-- Footer Section -->
+  <footer>
+    <p>&copy; 2025 Home Design Solutions</p>
+  </footer>
+</body>
+</html>

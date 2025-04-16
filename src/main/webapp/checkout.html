@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Checkout - Home Design Solutions</title>
+  <style>
+    /* Basic resets */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #fff;
+    }
+    /* Header */
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #f2f2f2;
+      padding: 10px 20px;
+      border-bottom: 2px solid #000;
+    }
+    header .logo {
+      font-size: 24px;
+      font-weight: bold;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+    nav ul li a {
+      text-decoration: none;
+      color: #000;
+      font-weight: bold;
+    }
+    /* Main Container */
+    main {
+      padding: 20px;
+    }
+    h1 {
+      margin-bottom: 20px;
+      font-size: 24px;
+    }
+    /* Checkout Container: Left & Right Columns */
+    .checkout-container {
+      display: flex;
+      gap: 20px;
+      border: 2px solid #000;
+      padding: 20px;
+    }
+    .left-section {
+      flex: 1;
+      border-right: 2px solid #000;
+      padding-right: 20px;
+    }
+    .right-section {
+      flex: 1;
+      padding-left: 20px;
+    }
+    /* EXPRESS CHECKOUT */
+    .express-checkout {
+      margin-bottom: 20px;
+    }
+    .express-checkout h2 {
+      margin-bottom: 10px;
+      font-size: 18px;
+    }
+    .express-checkout-logos {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+    .express-checkout-logos img {
+      width: 80px; /* Adjust as needed */
+      height: auto;
+      border: 2px solid #000;
+      padding: 5px;
+    }
+    /* SECTION TITLES (Contact, Delivery, Payment) */
+    .section-title {
+      margin-top: 20px;
+      margin-bottom: 10px;
+      font-size: 18px;
+      font-weight: bold;
+      border-bottom: 2px solid #000;
+      padding-bottom: 5px;
+    }
+    /* Basic form styling */
+    .form-group {
+      margin-bottom: 10px;
+    }
+    .form-group label {
+      display: block;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+    .form-group input {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #ccc;
+    }
+    /* Right Section: Cart Items */
+    .cart-heading {
+      margin-bottom: 10px;
+      font-size: 18px;
+      font-weight: bold;
+      border-bottom: 2px solid #000;
+      padding-bottom: 5px;
+    }
+    .cart-item {
+      display: flex;
+      margin-bottom: 20px;
+      border-bottom: 1px solid #000;
+      padding-bottom: 10px;
+    }
+    .cart-item img {
+      width: 80px; /* Adjust as needed */
+      margin-right: 10px;
+      border: 2px solid #000;
+    }
+    .cart-item-details h3 {
+      font-size: 16px;
+      margin-bottom: 5px;
+    }
+    .cart-item-details p {
+      margin-bottom: 5px;
+    }
+    /* Discount Code */
+    .discount-code {
+      margin-bottom: 20px;
+    }
+    .discount-code label {
+      font-weight: bold;
+      margin-right: 10px;
+    }
+    .discount-code input {
+      padding: 5px;
+      width: 200px;
+      margin-right: 10px;
+      border: 1px solid #ccc;
+    }
+    .discount-code button {
+      padding: 5px 10px;
+      border: 2px solid #000;
+      background: #fff;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    /* Cart Summary (Subtotal, Shipping, Total) */
+    .cart-summary {
+      margin-top: 20px;
+      text-align: right;
+      font-size: 16px;
+    }
+    .cart-summary p {
+      margin-bottom: 5px;
+    }
+    /* Pay Now Button */
+    .pay-now-btn {
+      margin-top: 10px;
+      padding: 10px 20px;
+      border: 2px solid #000;
+      background: #fff;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    /* Footer */
+    footer {
+      text-align: center;
+      background-color: #f2f2f2;
+      padding: 10px;
+      border-top: 2px solid #000;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="logo">Home Design Solutions</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="cart.html">Cart</a></li>
+        <li><a href="login.html">Sign in</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <h1>Checkout</h1>
+    <div class="checkout-container">
+      <!-- Left Section: Express Checkout, Contact, Delivery, Payment -->
+      <div class="left-section">
+        <!-- Express Checkout -->
+        <div class="express-checkout">
+          <h2>Express checkout</h2>
+          <div class="express-checkout-logos">
+            <!-- Placeholder images for PayPal, GPay, Venmo -->
+            <img src="https://via.placeholder.com/80?text=PayPal" alt="PayPal">
+            <img src="https://via.placeholder.com/80?text=GPay" alt="Google Pay">
+            <img src="https://via.placeholder.com/80?text=Venmo" alt="Venmo">
+          </div>
+        </div>
+
+        <!-- Contact Section -->
+        <div class="contact-section">
+          <div class="section-title">Contact</div>
+          <div class="form-group">
+            <label for="contact-email">Email</label>
+            <input type="text" id="contact-email" placeholder="Your Email">
+          </div>
+          <div class="form-group">
+            <label for="contact-phone">Phone</label>
+            <input type="text" id="contact-phone" placeholder="Your Phone Number">
+          </div>
+        </div>
+
+        <!-- Delivery Section -->
+        <div class="delivery-section">
+          <div class="section-title">Delivery</div>
+          <div class="form-group">
+            <label for="country">Country/Region</label>
+            <input type="text" id="country" placeholder="Country or Region">
+          </div>
+          <div class="form-group">
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" placeholder="First Name">
+          </div>
+          <div class="form-group">
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" placeholder="Last Name">
+          </div>
+          <div class="form-group">
+            <label for="address">Address</label>
+            <input type="text" id="address" placeholder="Street Address">
+          </div>
+          <div class="form-group">
+            <label for="city">City</label>
+            <input type="text" id="city" placeholder="City">
+          </div>
+          <div class="form-group">
+            <label for="state">State</label>
+            <input type="text" id="state" placeholder="State">
+          </div>
+          <div class="form-group">
+            <label for="zip">ZIP</label>
+            <input type="text" id="zip" placeholder="Zip Code">
+          </div>
+        </div>
+
+        <!-- Payment Section -->
+        <div class="payment-section">
+          <div class="section-title">Payment</div>
+          <div class="form-group">
+            <label for="card-name">Name on Card</label>
+            <input type="text" id="card-name" placeholder="Name on Card">
+          </div>
+          <div class="form-group">
+            <label for="exp-date">Expiration Date</label>
+            <input type="text" id="exp-date" placeholder="MM/YY">
+          </div>
+          <div class="form-group">
+            <label for="security-code">Security code</label>
+            <input type="text" id="security-code" placeholder="CVV">
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Section: Cart Items, Discount Code, Summary -->
+      <div class="right-section">
+        <div class="cart-heading">Your Items</div>
+
+        <!-- Cart Item 1 -->
+        <div class="cart-item">
+          <img src="https://via.placeholder.com/80" alt="Dining Room Light Fixture">
+          <div class="cart-item-details">
+            <h3>Dining Room Light Fixture</h3>
+            <p>$733</p>
+          </div>
+        </div>
+        <!-- Cart Item 2 -->
+        <div class="cart-item">
+          <img src="https://via.placeholder.com/80" alt="Eustace Pendant Light">
+          <div class="cart-item-details">
+            <h3>Eustace Pendant Light</h3>
+            <p>$410</p>
+          </div>
+        </div>
+
+        <!-- Discount Code -->
+        <div class="discount-code">
+          <label for="discount">Discount code or gift card</label>
+          <input type="text" id="discount" placeholder="Enter code">
+          <button>Apply</button>
+        </div>
+
+        <!-- Cart Summary -->
+        <div class="cart-summary">
+          <p>Subtotal: $1143.00</p>
+          <p>Shipping: $0.00</p>
+          <p><strong>Total: $1143.00 USD</strong></p>
+        </div>
+
+        <!-- Pay Now Button -->
+        <button class="pay-now-btn">PAY NOW</button>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Home Design Solutions</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>FAQs - Home Design Solutions</title>
+  <style>
+    /* Reset defaults */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #fff;
+      padding: 20px;
+    }
+    /* Header */
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: #f2f2f2;
+      padding: 10px 20px;
+      border-bottom: 2px solid #000;
+    }
+    header .logo {
+      font-size: 24px;
+      font-weight: bold;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 15px;
+    }
+    nav ul li a {
+      text-decoration: none;
+      color: #000;
+      font-weight: bold;
+    }
+    /* Main Content */
+    main {
+      padding: 20px;
+      text-align: center;
+    }
+    main h1 {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+    /* FAQ Container and Layout */
+    .faq-box {
+      width: 80%;
+      margin: 0 auto;
+      border: 2px solid #000; /* Bold border as in your mockup */
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+    }
+    .faq-column {
+      width: 48%; /* Two columns */
+    }
+    /* FAQ Item styling */
+    .faq-item {
+      margin-bottom: 15px;
+      text-align: left;
+      cursor: pointer;
+    }
+    .question {
+      padding: 8px;
+      background-color: #f2f2f2;
+      border: 1px solid #000;
+      font-size: 16px;
+      font-weight: bold;
+    }
+    .answer {
+      padding: 8px;
+      border: 1px solid #000;
+      border-top: none;
+      background-color: #fff;
+      font-size: 15px;
+      display: none; /* Hidden by default */
+    }
+    /* Footer */
+    footer {
+      text-align: center;
+      background-color: #f2f2f2;
+      padding: 10px;
+      border-top: 2px solid #000;
+      margin-top: 20px;
+    }
+  </style>
+  <script>
+    // JavaScript function to toggle display of the answer when the question is clicked
+    function toggleAnswer(element) {
+      var answer = element.nextElementSibling;
+      if (answer.style.display === "none" || answer.style.display === "") {
+        answer.style.display = "block";
+      } else {
+        answer.style.display = "none";
+      }
+    }
+  </script>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="logo">Home Design Solutions</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="cart.html">Cart</a></li>
+        <li><a href="login.html">Sign in</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <h1>Frequently Asked Questions:</h1>
+    <div class="faq-box">
+      <!-- Left Column -->
+      <div class="faq-column">
+        <div class="faq-item">
+          <div class="question" onclick="toggleAnswer(this)">How do I create an account?</div>
+          <div class="answer">To create an account, click on the Sign Up button on the home-page and follow the registration steps.</div>
+        </div>
+        <div class="faq-item">
+          <div class="question" onclick="toggleAnswer(this)">What payment methods are accepted?</div>
+          <div class="answer">We accept credit and debit cards for payment.</div>
+        </div>
+        <div class="faq-item">
+          <div class="question" onclick="toggleAnswer(this)">How can I track my order?</div>
+          <div class="answer">Once you log in, visit the Order History section to track the status of your orders.</div>
+        </div>
+        <div class="faq-item">
+          <div class="question" onclick="toggleAnswer(this)">How do I contact customer support?</div>
+          <div class="answer">You can reach our customer support via the Contact page where you can send us an email, leave a message below, or give us a phone call. </div>
+        </div>
+      </div>
+      
+      <!-- Right Column -->
+      <div class="faq-column">
+        <div class="faq-item">
+          <div class="question" onclick="toggleAnswer(this)">What home improvement products do you offer?</div>
+          <div class="answer">We offer a variety of home improvement products including kitchen appliances, lighting fixtures, and more.</div>
+        </div>
+        <div class="faq-item">
+          <div class="question" onclick="toggleAnswer(this)">Do you provide delivery and installation services?</div>
+          <div class="answer">Yes, we offer both delivery and professional installation services for most of our products.</div>
+        </div>
+        <div class="faq-item">
+          <div class="question" onclick="toggleAnswer(this)">Do you offer product warranties?</div>
+          <div class="answer">All products come with a standard warranty. For more specific information please contact us and we will provide exact product warranty information. </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Home Design Solutions</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Home Design Solutions</title>
+  <style>
+    /* Reset default browser styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: "Times New Roman", Times, serif;
+      background-color: #fff;
+      text-align: center;
+      padding: 20px;
+    }
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: #f2f2f2;
+      padding: 10px 20px;
+      border-bottom: 2px solid #000;
+    }
+    header .logo {
+      font-size: 24px;
+      font-weight: bold;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+    nav ul li a {
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+    }
+    /* Main content layout with two columns */
+    .content {
+      display: flex;
+      justify-content: space-between;
+      padding: 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .left-column {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    .left-column h1 {
+      font-size: 42px;
+      margin-bottom: 20px;
+    }
+    /* Banner image using external URL */
+    .banner-image {
+      width: 80%;
+      max-width: 400px;
+      height: auto;
+      margin-bottom: 20px;
+      border: 2px solid #000;
+    }
+    .right-column {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      padding-left: 20px;
+    }
+    .box {
+      border: 2px solid #333;
+      padding: 20px;
+      min-height: 150px;  /* Increased height */
+      text-align: left;
+      background-color: #fafafa;
+      border-radius: 4px;
+    }
+    .box strong {
+      font-size: 20px;  /* Larger heading */
+    }
+    /* More Information Button */
+    .more-info {
+      text-align: center;
+    }
+    .more-info button {
+      padding: 10px 20px;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      border: 2px solid #333;
+      background: #fff;
+      border-radius: 4px;
+    }
+    /* Footer */
+    footer {
+      background-color: #f2f2f2;
+      padding: 10px 20px;
+      text-align: center;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header Section -->
+  <header>
+    <div class="logo">Home Design Solutions</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <!-- Updated Products link: Redirects to ProductServlet -->
+		<a href="ProductServlet">Products</a>
+        <li><a href="contact.html">Contact</a></li>
+        <!-- Updated Cart link -->
+        <li><a href="cart.jsp">Cart</a></li>
+        <!-- Updated Sign in link now points to login.jsp -->
+        <li><a href="login.jsp">Sign in</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main Content Section -->
+  <div class="content">
+    <!-- Left Column: Big Centered Heading and Banner Image -->
+    <div class="left-column">
+      <h1>HOME DESIGN SOLUTIONS</h1>
+      <!-- Banner image from external URL -->
+      <img src="https://images.squarespace-cdn.com/content/v1/54d11035e4b05e3af80ed873/1513672008490-PK7NTPNH03P1WPOD8HGR/image-asset.jpeg" alt="Banner Image" class="banner-image">
+    </div>
+    <!-- Right Column: About and Contact boxes -->
+    <div class="right-column">
+      <!-- About Company Box -->
+      <div class="box">
+        <strong>About Company</strong>
+        <p>
+          Home Design Solutions is a professional home remodeling and interior design company founded in 2007 by Joe and Emily Herold. We specialize in kitchen and bath renovations, custom cabinetry, appliance installations, and comprehensive remodeling projects. Our mission is to enhance your living space with innovative design and exceptional craftsmanship. We value quality, integrity, and an unwavering commitment to customer satisfaction.
+        </p>
+      </div>
+      <!-- Contact Information Box -->
+      <div class="box">
+        <strong>Contact Information</strong>
+        <p>
+          Address: 101 Sedalia Drive, Phoenix, AZ 85001<br>
+          Phone: 602-KITCHEN<br>
+          Fax: 602-555-1212<br>
+          Hours of Operation: Monday - Friday, 9:00 AM – 5:00 PM
+        </p>
+      </div>
+      <!-- More Information Button -->
+      <div class="more-info">
+        <button onclick="location.href='about.html'">More Information</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer Section -->
+  <footer>
+    <p>&copy; 2025 Home Design Solutions</p>
+  </footer>
+</body>
+</html>
