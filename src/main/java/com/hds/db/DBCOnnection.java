@@ -1,26 +1,27 @@
 package com.hds.db;
+
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 
 public class DBCOnnection {
 
-    // Update with your actual database name, username, and password.
-	private static final String URL = "jdbc:mysql://host.docker.internal:3306/hds_database?useUnicode=true&characterEncoding=UTF-8";
-	private static final String USER = "root";
-	private static final String PASSWORD = "Monster2@";
-  
-
+    // Replace with the PostgreSQL connection URL provided by Render
+    private static final String URL = "jdbc:postgresql://dpg-d00i93c9c44c73fn053g-a/hds_main_database";
+    private static final String USER = "hds_main_database_user";
+    private static final String PASSWORD = "MDOpEbGNqP5uERqaEBZlbZgrNW9gM6TU";
+    
     public static Connection getConnection() {
         try {
-            // Load the MySQL JDBC driver (for older Java versions, required; for newer, it's optional)
-            Class.forName("com.mysql.cj.jdbc.Driver");
-            // Connect to your database
+            // Load the PostgreSQL JDBC driver
+            Class.forName("org.postgresql.Driver");
+            
+            // Connect to the PostgreSQL database
             Connection conn = DriverManager.getConnection(URL, USER, PASSWORD);
             System.out.println("Database connection successful!");
             return conn;
         } catch (ClassNotFoundException e) {
-            System.out.println("MySQL JDBC Driver not found.");
+            System.out.println("PostgreSQL JDBC Driver not found.");
             e.printStackTrace();
             return null;
         } catch (SQLException e) {
@@ -29,14 +30,15 @@ public class DBCOnnection {
             return null;
         }
     }
-    
+
     // Main method for testing the connection
     public static void main(String[] args) {
         Connection con = getConnection();
-        if(con != null) {
+        if (con != null) {
             System.out.println("Connection test passed!");
         } else {
             System.out.println("Connection test failed.");
         }
     }
 }
+
